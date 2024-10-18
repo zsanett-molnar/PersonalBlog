@@ -26,8 +26,10 @@
     </div>
     <div class="experience-content">
         <div class="companies">
-            <button class="company-button" (click)="changeDescription(0)">Accenture</button>
-            <button class="company-button" (click)="changeDescription(1)">Endava</button>
+            <button class="company-button" [ngClass]="{'active': selectedDescription === 0}"
+                (click)="changeDescription(0)">Accenture</button>
+            <button class="company-button" [ngClass]="{'active': selectedDescription === 1}"
+                (click)="changeDescription(1)">Endava</button>
         </div>
         <p>
             {{ displayedDescription }}

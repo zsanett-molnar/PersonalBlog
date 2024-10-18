@@ -96,9 +96,14 @@
     font-family: "NTR", sans-serif;
     font-size: 20px;
     color: white;
+    width: 100px;
 }
 
 .company-button:hover {
     background-color: #57A6A1;
     cursor: pointer;
+}
+
+.company-button.active {
+    border-right: 2px solid #57A6A1;
 }
