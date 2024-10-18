@@ -25,10 +25,11 @@
     cursor: pointer;
     transition: color 0.3s;
     font-family: "NTR", sans-serif;
+    text-decoration: none;
 }
 
 .toolbar-button:hover {
-    color: #2E4B4B;
+    color: #3f6666;
     /* Darker color on hover */
 }
 
