@@ -1,38 +1,30 @@
 .toolbar {
     display: flex;
     justify-content: space-between;
-    /* Aligns items to the left and right */
     align-items: center;
-    /* Vertically centers items */
     padding: 10px 20px;
-    /* Spacing around the toolbar */
-    background-color: transparent;
-    /* Background color of the toolbar */
+    background-color: #282c34;
     position: fixed;
-    /* Keeps the toolbar fixed at the top */
     top: 0;
-    /* Positions it at the top of the page */
     left: 0;
     right: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    /* Shadow effect */
     z-index: 1000;
-    /* Ensures the toolbar is above other elements */
 }
 
 .toolbar-left {
     display: flex;
-    /* Aligns buttons in a row */
 }
 
 .toolbar-button {
     background: transparent;
     border: none;
-    color: #57A6A1;
+    color: white;
     font-size: 16px;
     margin-right: 20px;
     cursor: pointer;
     transition: color 0.3s;
+    font-family: "NTR", sans-serif;
 }
 
 .toolbar-button:hover {
@@ -49,13 +41,10 @@
 
 .icon-link {
     margin-left: 15px;
-    /* Space between icons */
 }
 
 .icon {
     width: 24px;
-    /* Icon width */
     height: 24px;
-    color: white;
-    /* Icon height */
+
 }

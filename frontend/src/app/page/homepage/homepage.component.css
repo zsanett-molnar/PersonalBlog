@@ -100,4 +100,5 @@
 
 .company-button:hover {
     background-color: #57A6A1;
+    cursor: pointer;
 }
