@@ -9,13 +9,28 @@
     </div>
 </div>
 
-<div class="section-header">
-    <section>about me</section>
-    <span class="line"></span>
+<div class="section">
+    <div class="section-header">
+        <section>about me</section>
+        <span class="line"></span>
+    </div>
+
+    <p>I'm organized, ambitious and optimistic in my daily life. I'm a problem solver, a team worker and a fast learner.
+        I am focused to develop my professional skills, as well as my personal abilities.</p>
 </div>
 
-
-<div class="section-header">
-    <section>experience</section>
-    <span class="line"></span>
+<div class="section">
+    <div class="section-header">
+        <section>experience</section>
+        <span class="line"></span>
+    </div>
+    <div class="experience-content">
+        <div class="companies">
+            <button class="company-button" (click)="changeDescription(0)">Accenture</button>
+            <button class="company-button" (click)="changeDescription(1)">Endava</button>
+        </div>
+        <p>
+            {{ displayedDescription }}
+        </p>
+    </div>
 </div>
