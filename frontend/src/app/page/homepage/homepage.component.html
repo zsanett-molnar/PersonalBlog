@@ -7,7 +7,10 @@
         <span class="typed-text">{{ displayedDot }}</span>
         <span class="cursor">|</span>
     </div>
-    <svg src="https://www.svgrepo.com/show/127575/location-sign.svg"></svg>
+    <div class="personal-data">
+        <p>Tel:</p>
+        <p>123</p>
+    </div>
 </div>
 
 
@@ -33,7 +36,7 @@
             <button class="company-button" [ngClass]="{'active': selectedDescription === 1}"
                 (click)="changeDescription(1)">Endava</button>
         </div>
-        <p>
+        <p class="experience-description" [ngClass]="{'visible': descriptionVisible}">
             {{ displayedDescription }}
         </p>
     </div>
