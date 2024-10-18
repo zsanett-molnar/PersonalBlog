@@ -12,7 +12,7 @@ export class HomepageComponent implements OnInit {
   displayText: string = '';
   displayedName: string = '';
   displayedDot: string = '';
-  typingSpeed: number = 180;
+  typingSpeed: number = 200;
   index: number = 0;
 
   constructor() { }
@@ -40,11 +40,8 @@ export class HomepageComponent implements OnInit {
       setTimeout(() => this.typeName(), this.typingSpeed);
     }
     else {
-      this.typeDot();
+      this.displayedDot += '.';
     }
   }
 
-  typeDot(): void {
-    this.displayedDot += this.dot;
-  }
 }
