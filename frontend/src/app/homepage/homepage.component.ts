@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
   fullText: string = 'Hello, this is '
-  name: string = 'Zsanett.';
+  name: string = 'Zsanett';
+  dot: string = '.'
   displayText: string = '';
   displayedName: string = '';
+  displayedDot: string = '';
   typingSpeed: number = 180;
   index: number = 0;
 
@@ -37,5 +39,12 @@ export class HomepageComponent implements OnInit {
       this.index++;
       setTimeout(() => this.typeName(), this.typingSpeed);
     }
+    else {
+      this.typeDot();
+    }
+  }
+
+  typeDot(): void {
+    this.displayedDot += this.dot;
   }
 }
