@@ -47,6 +47,13 @@
 
 .personal-data {
     display: flex;
+    flex-direction: row;
+}
+
+.heroicon {
+    height: 30px;
+    width: auto;
+    padding-top: 20px;
 }
 
 .section {

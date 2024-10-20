@@ -9,6 +9,10 @@ import { HomepageComponent } from './page/homepage/homepage.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ExperienceCardComponent } from './component/experience-card/experience-card.component';
 
+import { NgIconsModule } from '@ng-icons/core';
+import { heroUsers, heroPhone, heroMapPin } from '@ng-icons/heroicons/outline';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +23,7 @@ import { ExperienceCardComponent } from './component/experience-card/experience-
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    NgIconsModule.withIcons({ heroUsers, heroPhone, heroMapPin })
   ],
   providers: [
     provideAnimationsAsync()
