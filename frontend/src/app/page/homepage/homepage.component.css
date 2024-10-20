@@ -121,7 +121,8 @@
     font-family: "NTR", sans-serif;
     font-size: 20px;
     color: white;
-    width: 100px;
+    min-width: 100px;
+    width: auto;
     transition: color 0.3s;
 }
 

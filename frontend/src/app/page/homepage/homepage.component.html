@@ -53,7 +53,17 @@
         <section>education</section>
         <span class="horizontal-line"></span>
     </div>
-    <p>Education</p>
+    <div class="experience-content">
+        <div class="companies">
+            <button class="company-button" [ngClass]="{'active': selectedEducation === 0}"
+                (click)="changeEducation(0)">University</button>
+            <button class="company-button" [ngClass]="{'active': selectedEducation === 1}"
+                (click)="changeEducation(1)">High school</button>
+        </div>
+        <p class="experience-description" [ngClass]="{'visible': educationVisible}">
+            {{ displayedEducation }}
+        </p>
+    </div>
 
 </div>
 
