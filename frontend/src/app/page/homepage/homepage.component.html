@@ -28,7 +28,7 @@
         <p>I'm organized, ambitious and optimistic in my daily life. I'm a problem solver, a team worker and a fast
             learner.
             I am focused to develop my professional skills, as well as my personal abilities.</p>
-        <img src="assets/pic-me2.JPG">
+        <img src="assets/pic-me.JPG">
     </div>
 </div>
 
@@ -37,14 +37,14 @@
         <section>experience</section>
         <span class="horizontal-line"></span>
     </div>
-    <div class="experience-content">
-        <div class="companies">
-            <button class="company-button" [ngClass]="{'active': selectedDescription === 0}"
+    <div class="right-content-div">
+        <div class="row-enum">
+            <button class="row-enum-button" [ngClass]="{'active': selectedDescription === 0}"
                 (click)="changeDescription(0)">Accenture</button>
-            <button class="company-button" [ngClass]="{'active': selectedDescription === 1}"
+            <button class="row-enum-button" [ngClass]="{'active': selectedDescription === 1}"
                 (click)="changeDescription(1)">Endava</button>
         </div>
-        <p class="experience-description" [ngClass]="{'visible': descriptionVisible}">
+        <p class="enum-description" [ngClass]="{'visible': descriptionVisible}">
             {{ displayedDescription }}
         </p>
     </div>
@@ -55,14 +55,14 @@
         <section>education</section>
         <span class="horizontal-line"></span>
     </div>
-    <div class="experience-content">
-        <div class="companies">
-            <button class="company-button" [ngClass]="{'active': selectedEducation === 0}"
+    <div class="right-content-div">
+        <div class="row-enum">
+            <button class="row-enum-button" [ngClass]="{'active': selectedEducation === 0}"
                 (click)="changeEducation(0)">University</button>
-            <button class="company-button" [ngClass]="{'active': selectedEducation === 1}"
+            <button class="row-enum-button" [ngClass]="{'active': selectedEducation === 1}"
                 (click)="changeEducation(1)">High school</button>
         </div>
-        <p class="experience-description" [ngClass]="{'visible': educationVisible}">
+        <p class="enum-description" [ngClass]="{'visible': educationVisible}">
             {{ displayedEducation }}
         </p>
     </div>
