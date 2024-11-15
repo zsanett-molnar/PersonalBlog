@@ -35,9 +35,8 @@
 
 .toolbar-right {
     display: flex;
-    /* Aligns icons in a row */
     align-items: center;
-    /* Centers icons vertically */
+    gap: 5px;
 }
 
 .icon-link {
@@ -47,5 +46,5 @@
 .icon {
     width: 24px;
     height: 24px;
-
+    color: white;
 }
