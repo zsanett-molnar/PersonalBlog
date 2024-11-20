@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'frontend';
+  darkTheme = true;
+
+  toggleTheme(): void {
+    this.darkTheme = !this.darkTheme;
+    document.body.classList.toggle('light-theme');
+  }
 }

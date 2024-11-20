@@ -39,8 +39,6 @@ export class HomepageComponent implements OnInit {
     this.educationVisible = true;
     this.displayedEducation = this.education[0];
     this.displayedDescription = this.descriptions[0];
-    console.log("descript visible: ", this.descriptionVisible);
-    console.log("educaton visible: ", this.educationVisible);
   }
 
   startTyping(): void {

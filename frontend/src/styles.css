@@ -5,6 +5,37 @@ body {
     font-family: "NTR", sans-serif;
 }
 
+body.light-theme {
+    --primary-color: #133E87;
+    background-color: #F5EDED;
+    color: #6482AD;
+    margin: 0;
+    font-family: "NTR", sans-serif;
+}
+
+body.light-theme .toolbar {
+    background-color: #F5EDED;
+}
+
+body.light-theme .toolbar-button,
+body.light-theme .typing-container,
+body.light-theme .section-header {
+    color: var(--primary-color);
+}
+
+body.light-theme .horizontal-line {
+    background-color: #57A6A1;
+}
+
+body.light-theme .row-enum button {
+    color: var(--primary-color) !important;
+}
+
+body.light-theme .row-enum button:hover {
+    color: #7FA1C3 !important;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
