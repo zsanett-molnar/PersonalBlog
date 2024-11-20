@@ -11,6 +11,9 @@ import { ExperienceCardComponent } from './component/experience-card/experience-
 
 import { NgIconsModule } from '@ng-icons/core';
 import { heroUsers, heroPhone, heroMapPin, heroEnvelope } from '@ng-icons/heroicons/outline';
+import { heroEnvelopeSolid } from '@ng-icons/heroicons/solid';
+import { octMarkGithub } from '@ng-icons/octicons';
+import { bootstrapLinkedin } from '@ng-icons/bootstrap-icons';
 
 
 @NgModule({
@@ -23,7 +26,7 @@ import { heroUsers, heroPhone, heroMapPin, heroEnvelope } from '@ng-icons/heroic
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    NgIconsModule.withIcons({ heroUsers, heroPhone, heroMapPin, heroEnvelope })
+    NgIconsModule.withIcons({ heroUsers, heroPhone, heroMapPin, heroEnvelope, heroEnvelopeSolid, octMarkGithub, bootstrapLinkedin })
   ],
   providers: [
     provideAnimationsAsync()

@@ -35,6 +35,10 @@ body.light-theme .row-enum button:hover {
     color: #7FA1C3 !important;
 }
 
+body.light-theme .icon {
+    color: black;
+}
+
 
 html {
     scroll-behavior: smooth;

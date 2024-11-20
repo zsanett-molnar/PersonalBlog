@@ -30,18 +30,14 @@
 
 .toolbar-button:hover {
     color: #3f6666;
-    /* Darker color on hover */
 }
 
 .toolbar-right {
     display: flex;
+    gap: 20px;
     align-items: center;
-    gap: 5px;
 }
 
-.icon-link {
-    margin-left: 15px;
-}
 
 .icon {
     width: 24px;
