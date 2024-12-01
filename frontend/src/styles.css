@@ -6,15 +6,27 @@ body {
 }
 
 body.light-theme {
+    --primary-color: #22177A;
+    --secondary-color: #605EA1;
+    --third-color: #8EA3A6;
+    --bck-color: #E6E9AF;
+
+    background-color: var(--bck-color);
+    color: var(--third-color);
+    margin: 0;
+    font-family: "NTR", sans-serif;
+}
+
+/* body.light-theme {
     --primary-color: #133E87;
     background-color: #F5EDED;
     color: #6482AD;
     margin: 0;
     font-family: "NTR", sans-serif;
-}
+} */
 
 body.light-theme .toolbar {
-    background-color: #F5EDED;
+    background-color: var(--bck-color);
 }
 
 body.light-theme .toolbar-button,
@@ -24,7 +36,7 @@ body.light-theme .section-header {
 }
 
 body.light-theme .horizontal-line {
-    background-color: #57A6A1;
+    background-color: var(--secondary-color);
 }
 
 body.light-theme .row-enum button {
