@@ -17,14 +17,6 @@ body.light-theme {
     font-family: "NTR", sans-serif;
 }
 
-/* body.light-theme {
-    --primary-color: #133E87;
-    background-color: #F5EDED;
-    color: #6482AD;
-    margin: 0;
-    font-family: "NTR", sans-serif;
-} */
-
 body.light-theme .toolbar {
     background-color: var(--bck-color);
 }
