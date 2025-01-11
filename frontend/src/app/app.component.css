@@ -65,7 +65,6 @@
         right: 0;
         bottom: 0;
         background-color: white;
-        border: #3f6666;
         -webkit-transition: 0.4s;
         transition: 0.4s;
         border-radius: 34px;
@@ -77,8 +76,8 @@
             width: 26px;
             left: 4px;
             bottom: 4px;
-            background-color: rgb(64, 64, 64);
-            border: #3f6666;
+            background-color: var(--current-theme);
+            border: #000000;
             -webkit-transition: 0.4s;
             transition: 0.4s;
             border-radius: 50%;
@@ -92,7 +91,7 @@
     }
 
     input:checked+.slider {
-        background-color: black;
+        background-color: rgb(0, 0, 0);
     }
 
     input:focus+.slider {
