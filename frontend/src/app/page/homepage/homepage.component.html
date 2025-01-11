@@ -58,9 +58,9 @@
             <button class="row-enum-button" [ngClass]="{'active': selectedEducation === 1}"
                 (click)="changeEducation(1)">High school</button>
         </div>
-        <p class="enum-description" [ngClass]="{'visible': educationVisible}">
-            {{ displayedEducation }}
+        <p class="enum-description" [ngClass]="{'visible': educationVisible}" [innerHTML]="displayedEducation">
         </p>
+
     </div>
 
 </div>

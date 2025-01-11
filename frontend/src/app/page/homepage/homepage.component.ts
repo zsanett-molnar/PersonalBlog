@@ -27,8 +27,17 @@ export class HomepageComponent implements OnInit {
   selectedEducation: number = 0;
   educationVisible: boolean = false;
   education: string[] = [
-    "Education 1",
-    "Education 2"
+    `During my university journey at the <a href="https://ac.utcluj.ro/acasa.html" target="_blank">Technical University of Cluj-Napoca,</a> I explored a broad spectrum of` +
+    " hardware and software disciplines, gaining a solid foundation in computer science and engineering. Throughout my studies," +
+    " I primarily worked on individual projects, which allowed me to develop strong self-management and problem-solving skills." +
+    " However, I also had opportunities to collaborate on team projects, where I strengthened my soft skills such as " +
+    "communication, teamwork, and adaptability, which are essential in a collaborative environment. \n " +
+    "Among the technologies I worked with, I spent the most time developing Java-based applications. This included creating" +
+    " desktop applications and building web applications using Java Spring Boot, which helped me gain practical experience in " +
+    " software development.",
+
+    `In high school, I was part of a mathematics-informatics class, where I first got in touch with the world of informatics and developed my analytical skills. I participated in numerous mathematics competitions, reaching the national stage of the <a href="https://www.example-school-website.com" target="_blank">Transylvanian Hungarian Mathematics competition</a>` +
+    `. Additionally, I earned my A2 <a href="https://www.auslandsschulwesen.de/DE/Deutsch-lernen/DSD/dsd_node.html" target="_blank">German language diploma</a>, further broadening my academic and cultural horizons.`
   ]
 
   constructor() { }
