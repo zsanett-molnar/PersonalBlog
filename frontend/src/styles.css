@@ -54,3 +54,8 @@ body.light-theme .icon {
 html {
     scroll-behavior: smooth;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
