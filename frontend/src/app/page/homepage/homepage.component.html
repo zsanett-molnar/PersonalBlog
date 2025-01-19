@@ -40,9 +40,17 @@
             <button [ngClass]="{'active': selectedDescription === 0}" (click)="changeDescription(0)">Accenture</button>
             <button [ngClass]="{'active': selectedDescription === 1}" (click)="changeDescription(1)">Endava</button>
         </div>
-        <p class="enum-description" [ngClass]="{'visible': descriptionVisible}">
+        <div class="enum-description" [ngClass]="{'visible': descriptionVisible}">
             {{ displayedDescription }}
-        </p>
+        </div>
+    </div>
+    <div class="right-content-div">
+        <span>Exposed to</span>
+        <ul [ngClass]="{ 'visible': technologiesVisible }" class="technologies enum-description">
+            <li *ngFor="let tech of displayedTechnologies">
+                <span style="color: #57A6A1;">&#9654;</span> {{ tech }}
+            </li>
+        </ul>
     </div>
 </div>
 
@@ -60,9 +68,7 @@
         </div>
         <p class="enum-description" [ngClass]="{'visible': educationVisible}" [innerHTML]="displayedEducation">
         </p>
-
     </div>
-
 </div>
 
 <div id="projects" class="section">

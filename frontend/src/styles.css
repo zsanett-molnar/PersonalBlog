@@ -38,6 +38,7 @@ body.light-theme .horizontal-line {
     background-color: var(--secondary-color);
 }
 
+
 body.light-theme .row-enum button {
     color: var(--primary-color) !important;
 }
@@ -58,4 +59,22 @@ html {
 img {
     max-width: 100%;
     height: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body.light-theme a {
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+span {
+    font-size: 20px;
 }

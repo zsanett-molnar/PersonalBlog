@@ -9,9 +9,11 @@ export class HomepageComponent implements OnInit {
   fullText: string = 'Hello, this is '
   name: string = 'Zsanett';
   dot: string = '.'
+
   displayText: string = '';
   displayedName: string = '';
   displayedDot: string = '';
+
   typingSpeed: number = 200;
   index: number = 0;
 
@@ -40,14 +42,23 @@ export class HomepageComponent implements OnInit {
     `. Additionally, I earned my A2 <a href="https://www.auslandsschulwesen.de/DE/Deutsch-lernen/DSD/dsd_node.html" target="_blank">German language diploma</a>, further broadening my academic and cultural horizons.`
   ]
 
+  displayedTechnologies: string[] = [];
+  selectedTechnology: number = 0;
+  technologiesVisible: boolean = false;
+  technologies: { [experience: number]: string[] } = {
+    0: ["Java Spring Boot", "JavaFX", "Apache POI", "Huggingface AI", "Unit Testing"],
+    1: ["Java Spring Boot", ".NET", "Android", "Testing", "RPA with UiPath"]
+  };
   constructor() { }
 
   ngOnInit(): void {
     this.startTyping();
     this.descriptionVisible = true;
     this.educationVisible = true;
+    this.technologiesVisible = true;
     this.displayedEducation = this.education[0];
     this.displayedDescription = this.descriptions[0];
+    this.displayedTechnologies = this.technologies[0];
   }
 
   startTyping(): void {
@@ -77,9 +88,14 @@ export class HomepageComponent implements OnInit {
     this.selectedDescription = index;
     this.descriptionVisible = false;
 
+    this.selectedTechnology = index;
+    this.technologiesVisible = false;
+
     setTimeout(() => {
       this.displayedDescription = this.descriptions[index];
+      this.displayedTechnologies = this.technologies[index];
       this.descriptionVisible = true;
+      this.technologiesVisible = true;
     }, 300);
   }
 
