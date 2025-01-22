@@ -15,6 +15,7 @@ import { heroEnvelopeSolid } from '@ng-icons/heroicons/solid';
 import { octMarkGithub } from '@ng-icons/octicons';
 import { bootstrapLinkedin } from '@ng-icons/bootstrap-icons';
 
+import { CarouselControlComponent, CarouselInnerComponent, CarouselItemComponent, CarouselModule, ThemeDirective } from '@coreui/angular';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { bootstrapLinkedin } from '@ng-icons/bootstrap-icons';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    NgIconsModule.withIcons({ heroUsers, heroPhone, heroMapPin, heroEnvelope, heroEnvelopeSolid, octMarkGithub, bootstrapLinkedin })
+    NgIconsModule.withIcons({ heroUsers, heroPhone, heroMapPin, heroEnvelope, heroEnvelopeSolid, octMarkGithub, bootstrapLinkedin }),
+    CarouselModule, CarouselControlComponent, CarouselInnerComponent, CarouselItemComponent, ThemeDirective
   ],
   providers: [
     provideAnimationsAsync()
