@@ -6,6 +6,16 @@
     margin-left: 300px;
 }
 
+@media (max-width: 768px) {
+    .carousel {
+        position: relative;
+        width: 90%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+}
+
 .carousel.pointer-event {
     touch-action: pan-y
 }

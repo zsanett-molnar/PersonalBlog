@@ -50,7 +50,7 @@ body.light-theme .row-enum button:hover {
 }
 
 body.light-theme .icon {
-    color: black;
+    color: var(--primary-color);
 }
 
 body.light-theme .redirect-button {

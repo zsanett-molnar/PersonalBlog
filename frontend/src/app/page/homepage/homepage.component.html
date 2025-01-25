@@ -1,10 +1,10 @@
 <div class="wrapper">
     <img class="avatar" src="assets/pic-me2.JPG">
     <div class="typing-container">
-        <span style="font-size: 50px;">{{ displayText }}</span>
+        <span>{{ displayText }}</span>
         <span class="name">{{ displayedName }}</span>
-        <span style="font-size: 50px;">{{ displayedDot }}</span>
-        <span style="font-size: 50px;" class="cursor">|</span>
+        <span>{{ displayedDot }}</span>
+        <span class="cursor">|</span>
     </div>
     <div class="personal-data">
         <ng-icon class="location-icon" name="heroMapPin"></ng-icon>
@@ -44,7 +44,7 @@
             {{ displayedDescription }}
         </div>
     </div>
-    <div class="right-content-div">
+    <div class="right-content-div exposed">
         <span>Exposed to</span>
         <ul [ngClass]="{ 'visible': technologiesVisible }" class="technologies enum-description">
             <li *ngFor="let tech of displayedTechnologies">
@@ -77,7 +77,7 @@
         <span class="horizontal-line"></span>
     </div>
     <div>
-        <p style="margin-left:200px">Throughout my studies, I had the opportunity to develop multiple projects.</p>
+        <p>Throughout my studies, I had the opportunity to develop multiple projects.</p>
         <app-experience-card></app-experience-card>
     </div>
 </div>
