@@ -1,9 +1,11 @@
 :root {
     --bck-color: #282c34;
-    --primary-color: #22177A;
-    --secondary-color: #605EA1;
-    --third-color: #8EA3A6 !important;
-    --light-bck-color: #E6E9AF;
+    --highlight-color: #57A6A1;
+
+    --light-bck-color: #FDF6E3;
+    --primary-color: #3C2F2F;
+    --secondary-color: #E89D67;
+    --third-color: #3C2F2F !important;
 
     --current-theme: var(--bck-color);
 }
@@ -51,6 +53,15 @@ body.light-theme .icon {
     color: black;
 }
 
+body.light-theme .redirect-button {
+    background-color: var(--primary-color);
+}
+
+body.light-theme .carousel-indicators [data-coreui-target] {
+    background-color: var(--primary-color);
+}
+
+
 
 html {
     scroll-behavior: smooth;
@@ -70,6 +81,11 @@ body.light-theme a {
     color: var(--third-color);
     text-decoration: none;
 }
+
+body.light-theme .redirect-button {
+    color: var(--secondary-color);
+}
+
 
 p {
     font-size: 20px;

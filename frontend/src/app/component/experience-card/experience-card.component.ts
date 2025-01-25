@@ -13,10 +13,16 @@ export class ExperienceCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: './assets/carousel/energy.jpg'
+      src: './assets/carousel/energy-storyset.png',
+      title: "Energy Management System",
+      subtitle: "description1 wdQEGWEG",
+      href: "https://github.com/zsanett-molnar/Energy-Management-System"
     };
     this.slides[1] = {
-      src: './assets/carousel/adventure.jpg'
+      src: './assets/carousel/trip.png',
+      title: "Adventure Avenue",
+      subtitle: "description1 wdQEGWEG",
+      href: "https://github.com/zsanett-molnar/AdventureAvenue"
     };
 
   }

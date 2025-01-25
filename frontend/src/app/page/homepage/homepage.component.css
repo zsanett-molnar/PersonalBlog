@@ -29,9 +29,10 @@
 
 .name {
     display: inline-block;
-    color: #57A6A1;
+    color: var(--highlight-color);
     font-size: 50px;
 }
+
 
 @keyframes blink {
 
@@ -85,6 +86,7 @@
     margin-right: 20px;
     border-radius: 20px;
     height: auto;
+    text-align: justify;
 }
 
 
