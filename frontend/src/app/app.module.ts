@@ -10,11 +10,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { ExperienceCardComponent } from './component/experience-card/experience-card.component';
 
 import { NgIconsModule } from '@ng-icons/core';
-import { heroUsers, heroPhone, heroMapPin, heroEnvelope } from '@ng-icons/heroicons/outline';
+import { heroUsers, heroPhone, heroMapPin, heroEnvelope, heroBars3, heroXMark } from '@ng-icons/heroicons/outline';
 import { heroEnvelopeSolid } from '@ng-icons/heroicons/solid';
 import { octMarkGithub } from '@ng-icons/octicons';
 import { bootstrapLinkedin } from '@ng-icons/bootstrap-icons';
-
 import { CarouselControlComponent, CarouselInnerComponent, CarouselItemComponent, CarouselModule, ThemeDirective } from '@coreui/angular';
 
 @NgModule({
@@ -27,7 +26,7 @@ import { CarouselControlComponent, CarouselInnerComponent, CarouselItemComponent
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    NgIconsModule.withIcons({ heroUsers, heroPhone, heroMapPin, heroEnvelope, heroEnvelopeSolid, octMarkGithub, bootstrapLinkedin }),
+    NgIconsModule.withIcons({ heroUsers, heroPhone, heroMapPin, heroEnvelope, heroEnvelopeSolid, octMarkGithub, bootstrapLinkedin, heroBars3, heroXMark }),
     CarouselModule, CarouselControlComponent, CarouselInnerComponent, CarouselItemComponent, ThemeDirective
   ],
   providers: [

@@ -1,5 +1,13 @@
 <router-outlet></router-outlet>
 <nav class="toolbar">
+    <ng-icon name="{{isMenuOpen ? 'heroXMark' : 'heroBars3'}}" alt="menu" class="icon menu-icon"
+        (click)="toggleMenu()"></ng-icon>
+    <div class="theme-switcher mobile-theme-switcher">
+        <label class="switch">
+            <input type="checkbox" [checked]="darkTheme" (change)="toggleTheme()" />
+            <span class="slider"></span>
+        </label>
+    </div>
     <div class="toolbar-left">
         <a href="#about" class="toolbar-button">About Me</a>
         <a href="#experience" class="toolbar-button">Experience</a>
@@ -22,5 +30,28 @@
         <a href="https://github.com/zsanett-molnar" target="_blank" class="icon-link">
             <ng-icon name="octMarkGithub" alt="GitHub" class="icon"></ng-icon>
         </a>
+    </div>
+
+    <div class="toolbar-mobile" [class.show]="isMenuOpen">
+        <a href="#about" class="toolbar-button">About Me</a>
+        <a href="#experience" class="toolbar-button">Experience</a>
+        <a href="#education" class="toolbar-button">Education</a>
+        <a href="#projects" class="toolbar-button">Projects</a>
+
+        <div>
+            <div class="social-icons">
+                <a href="mailto:molnar.zsanett.123@gmail.com?subject=Hello&body=This%20is%20a%20test%20email"
+                    class="icon-link">
+                    <ng-icon name="heroEnvelopeSolid" alt="gmail" class="icon"></ng-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/zsanett-ingrid-moln%C3%A1r-310953237/" target="_blank"
+                    class="icon-link">
+                    <ng-icon name="bootstrapLinkedin" alt="linkedin" class="icon"></ng-icon>
+                </a>
+                <a href="https://github.com/zsanett-molnar" target="_blank" class="icon-link">
+                    <ng-icon name="octMarkGithub" alt="GitHub" class="icon"></ng-icon>
+                </a>
+            </div>
+        </div>
     </div>
 </nav>

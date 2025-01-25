@@ -1,20 +1,10 @@
 .carousel {
     position: relative;
-    width: 700px;
-    margin-top: 50px;
+    max-width: 40%;
     margin-bottom: 50px;
-    margin-left: 300px;
+    margin-left: -100px;
 }
 
-@media (max-width: 768px) {
-    .carousel {
-        position: relative;
-        width: 90%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 0px;
-    }
-}
 
 .carousel.pointer-event {
     touch-action: pan-y
@@ -271,4 +261,18 @@
 
 .redirect-button:hover {
     background-color: #458682;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        position: relative;
+        max-width: 90%;
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+
+    .redirect-button {
+        font-size: 12px;
+        white-space: nowrap;
+    }
 }
