@@ -189,6 +189,10 @@
     font-size: 20px
 }
 
+.carousel-p {
+    padding-left: 50px;
+}
+
 @media (max-width: 768px) {
     .wrapper {
         margin: 20px;
@@ -331,6 +335,10 @@ ul {
         width: auto;
         padding-top: 4px;
         padding-right: 3px;
+    }
+
+    .carousel-p {
+        padding-left: 0px;
     }
 
 
