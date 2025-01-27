@@ -8,6 +8,7 @@
     --third-color: #3C2F2F !important;
 
     --current-theme: var(--bck-color);
+    --current-highlight: var(--highlight-color);
 }
 
 body {
@@ -21,6 +22,7 @@ body {
 body.light-theme {
     background-color: var(--light-bck-color);
     --current-theme: var(--light-bck-color);
+    --current-highlight: var(--secondary-color);
     color: var(--third-color) !important;
     margin: 0;
     font-family: "NTR", sans-serif;

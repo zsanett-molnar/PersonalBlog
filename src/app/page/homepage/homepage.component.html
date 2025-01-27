@@ -49,7 +49,7 @@
         <span>Exposed to</span>
         <ul [ngClass]="{ 'visible': technologiesVisible }" class="technologies enum-description">
             <li *ngFor="let tech of displayedTechnologies">
-                <span style="color: #57A6A1;">&#9654;</span> {{ tech }}
+                <span style="color:var(--current-highlight);">&#9654;</span> {{ tech }}
             </li>
         </ul>
     </div>
