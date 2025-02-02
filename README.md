@@ -1,27 +1,38 @@
-# Frontend
+# **Personal Blog - Digital CV**  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
+This is a **personal blog** that serves as a **digitalized version of my CV**.  
+🔗 [Live Demo](https://zsanett-molnar.netlify.app/)  
 
-## Development server
+## **🛠️ Technologies Used**  
+- **Angular 18** (Frontend Framework)  
+- **TypeScript** (Strongly Typed JavaScript)  
+- **CSS** (Styling)  
+- **Netlify** (Hosting & Deployment)  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## **🚀 How to Run Locally**  
 
-## Code scaffolding
+### **1️⃣ Clone the Repository**  
+```bash
+git clone https://github.com/zsanett-molnar/PersonalBlog.git
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+### **2️⃣ Install Dependencies**
 
-## Build
+```bash
+npm install
+```
+### **3️⃣ Run the Development Server**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+ng serve
+```
+## **🌍 Deployment**
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Hosted on **Netlify**
+- Automatically deployed from the **main branch**
+  
+## **📌 Features**
+  
+✔️ **Projects Carousel**  
+✔️ **Responsive Design**  
+✔️ **Dark/Light Theme**
